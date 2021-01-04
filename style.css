@@ -10,8 +10,9 @@ img {
 .list1 {
     display: inline-block;
     width: 20%;
+    min-width: 20%;
 }
 
 .st2 {
-    padding-top: 12px;
+    padding-top: 11.5px;
 }
