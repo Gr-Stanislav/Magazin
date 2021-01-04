@@ -9,4 +9,9 @@ img {
 
 .list1 {
     display: inline-block;
+    width: 20%;
+}
+
+.st2 {
+    padding-top: 12px;
 }
