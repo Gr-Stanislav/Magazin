@@ -26,3 +26,17 @@ img {
     padding-left: 5px;
     margin-bottom: 176px;
 }
+
+.client {
+    line-height: 1.5;
+    display: inline-block;
+    margin-bottom: 217px;
+}
+
+#password {
+    margin-left: 80px;
+}
+
+#login {
+    margin-left: 7.5px;
+}
