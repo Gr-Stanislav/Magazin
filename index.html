@@ -122,21 +122,51 @@
             <br>
             <br>
         </fieldset>
-
+<!-- Data dostavki ------------------------------- -->
+        <fieldset class="list1 st3">
+            <legend>Дата и время:</legend>
+            <ul>
+                <li>
+                    <label for="day">Дата доставки: </label>
+                    <input type="date" name="dateship" id="day" value="дата доставки" required>
+                </li>
+                <li>
+                    <label for="tim">Время: </label><br>
+                    <input type="time" id="tim" required>
+                </li>
+                
+            </ul>
+        </fieldset>
+<!-- --------------------------------------------------- -->
         <fieldset>
             <legend>Упаковка товаров:</legend>
 
-            <input type="radio" name="upak" id="pak">
+            <input type="radio" name="upak" id="pak" value="В пакеты" checked>
             <label for="pak">Упаковать в пакеты?</label> <br>
 
-            <input type="radio" name="upak" id="hend">
+            <input type="radio" name="upak" id="hend" value="В руках">
             <label for="hend">Понесёте в руках?</label>
         </fieldset>
+
+        <fieldset>
+            <legend>Способы доставки:</legend>
+
+            <input type="radio" name="shipp" id="kur" value="курьер">
+            <label for="kur">Курьерская доставка.</label><br>
+
+            <input type="radio" name="shipp" id="golub" value="голубями" checked>
+            <label for="golub">Голубями.</label><br>
+
+            <input type="radio" name="shipp" id="post" value="новая почта">
+            <label for="post">Новая Почта</label>
+        </fieldset>
+
+
+        <button type="submit">Оформить заказ</button>
+        <input type="reset" value="Сброс">
     </form>
     </div>
 
-
-    <button type="submit">Заказать</button>
 
 </body>
 </html>
