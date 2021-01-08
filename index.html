@@ -9,12 +9,12 @@
 <body>
     <h1>Новогодний магазин</h1>
     <img src="images/1.jpg" alt="Cep" width="100px">
-
-    <form action="#" method="POST">
-        <fieldset class="list1">
+    <div>
+    <form action="###" method="POST">
+        <fieldset class="list1 st1">
             <legend>Овощи и фрукты:</legend>
 
-            <ol>
+            <ul>
                 <li>
                     <label>
                     <input type="checkbox" name="products" value="Картошка"> Картошка
@@ -80,13 +80,107 @@
                         <input type="checkbox" name="products" value="Банан"> Банан
                     </label>
                 </li>
-            </ol>
+            </ul>
         </fieldset>
 
-        <button type="submit">Заказать</button>
+        <fieldset class="list1 st2">
+            <legend>Алкоголь:</legend>
+
+            <ul>
+                <li>
+                    <label><input type="checkbox">Вино</label>
+                </li>
+                <li>
+                    <label><input type="checkbox">Мартини</label>
+                </li>
+                <li>
+                    <label><input type="checkbox">Виски</label>
+                </li>
+                <li>
+                    <label><input type="checkbox">Ром</label>
+                </li>
+                <li>
+                    <label><input type="checkbox">Ликер</label>
+                </li>
+                <li>
+                    <label><input type="checkbox">Джин</label>
+                </li>
+                <li>
+                    <label><input type="checkbox">Пиво</label>
+                </li>
+                <li>
+                    <label><input type="checkbox">Водка</label>
+                </li>
+                <li>
+                    <label><input type="checkbox">Коньяк</label>
+                </li>
+                <li>
+                    <label><input type="checkbox">Сидр</label>
+                </li>
+            </ul>
+            <br>
+            <br>
+            <br>
+        </fieldset>
+<!-- Data dostavki ------------------------------- -->
+        <fieldset class="list1 st3">
+            <legend>Дата и время:</legend>
+            <ul>
+                <li>
+                    <label for="day">Дата доставки: </label>
+                    <input type="date" name="dateship" id="day" value="dateship" required>
+                </li>
+                <li>
+                    <label for="tim">Время: </label><br>
+                    <input type="time" id="tim" required>
+                </li>
+                
+            </ul>
+        </fieldset>
+<!--mail + login + password -------------------------------------------- -->
+<fieldset class="client">
+    <legend>Информация пользователя:</legend>
+
+    <label for="email">Электронная почта:</label>
+        <input type="email" name="email" id="email" placeholder="123@gmail.com" autocomplete="email"> <br>
+    
+    <label for="login">Имя пользователя:</label>
+        <input type="text" name="login" id="login" autocomplete="username"> <br>
+
+    <label for="password">Пароль:</label>
+        <input type="password" name="password" id="password">
+</fieldset>
+
+<!--  ---------------------------- -->
+        <fieldset>
+            <legend>Упаковка товаров:</legend>
+
+            <input type="radio" name="upak" id="pak" value="В пакеты" checked>
+            <label for="pak">Упаковать в пакеты?</label> <br>
+
+            <input type="radio" name="upak" id="hend" value="В руках">
+            <label for="hend">Понесёте в руках?</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Способы доставки:</legend>
+
+            <input type="radio" name="shipp" id="kur" value="курьер">
+            <label for="kur">Курьерская доставка.</label><br>
+
+            <input type="radio" name="shipp" id="golub" value="голубями" checked>
+            <label for="golub">Голубями.</label><br>
+
+            <input type="radio" name="shipp" id="post" value="новая почта">
+            <label for="post">Новая Почта</label>
+        </fieldset>
 
 
+        <button type="submit">Оформить заказ</button>
+        <input type="reset" value="Сброс">
     </form>
+    </div>
+
 
 </body>
 </html>
